@@ -1,0 +1,311 @@
+*{padding: 0; margin: 0; box-sizing: border-box}
+        
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,8)) , url('plantnursery2.jpg');
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+   width: 100%;
+   height: 100px;
+   color: azure;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-size:2rem ;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 20px;
+    
+}
+.menu a:hover{
+    border: 1px solid rgb(6, 6, 6);
+    color: black;
+    background: azure;
+
+    
+}
+.Login a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+
+}
+.Login a:hover{
+    border: 1px solid rgb(252, 249, 249);
+    color: azure;
+    background: transparent;
+}
+
+.plants{
+  position: absolute;
+  top: 40%;
+  left:50%;
+  max-width: 650;  
+  transform: translate(-50%,50%);
+  text-align: center;
+  color: azure;
+}
+.plants span{
+    letter-spacing: 5px;
+}
+.plants h1{
+    font-size: 2.2em;
+    
+}
+.plants h4{
+    font-size: 1em;
+}
+.plants a{
+    text-decoration: none;
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.plants a:hover{
+    border: 1px solid rgb(252, 249, 249);
+    color: azure;
+    background: transparent;
+}
+
+.items{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px;
+    grid-row-gap: 30px;
+}
+h1{
+    text-align: center;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+.item button{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    display: block;
+    margin: 0 auto;
+}
+.item button:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: azure;
+    background: black;
+}
+.h1{
+    text-align: center;
+    
+}
+h3{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 35px;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading p{
+    font-size: 25px;
+    color: #666;
+    text-align: left;
+    margin-bottom: 35px;
+}
+.cointainer{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 0px;
+    margin-left: 20px;
+    overflow:hidden;
+}
+.about-image img{
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    transition: 0.5 ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+    color: #333;
+}
+.about-content p{
+    font-size: 25px;
+    text-align: left;
+    margin-right: 60px;
+    line-height: 1.5;
+    color: #666;
+}
+.container2{
+    width: 750px;
+    height: 600px;
+    max-width: 900px;
+    max-height: 5000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,2);
+}
+.container2 h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+form input, form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: black;
+    border-radius: 5px;
+    font-size: large;
+    background-color: rgb(218, 215, 215);
+    color: #333;
+}
+form input:focus, form textarea:focus{
+    outline: none;
+    box-shadow: 0 0 5px #333;
+}
+form button{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+form button:hover{
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background: rgb(218, 215, 215);
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #aca9a4;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+    color: #ecdbba;
+}
+
+.social-media a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #000000;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
